@@ -1,31 +1,31 @@
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue'
 
-const name = ref('John Doe');
-const status = ref('active');
-const tasks = ref(['Task One', 'Task Two', 'Task Three']);
-const newTask = ref('');
+  const name = ref('John Doe');
+  const status = ref('active');
+  const tasks = ref(['Task One', 'Task Two', 'Task Three']);
+  const newTask = ref('');
 
-const toggleStatus = () => {
-  if (status.value === 'active') {
-    status.value = 'pending'
-  } else if (status.value === 'pending') {
-    status.value = 'inactive'
-  } else {
-    status.value = 'active'
+  const toggleStatus = () => {
+    if (status.value === 'active') {
+      status.value = 'pending'
+    } else if (status.value === 'pending') {
+      status.value = 'inactive'
+    } else {
+      status.value = 'active'
+    }
   }
-}
 
-const addTask = () => {
-  if (newTask.value.trim() !== '') {
-    tasks.value.push(newTask.value)
-    newTask.value = ''
+  const addTask = () => {
+    if (newTask.value.trim() !== '') {
+      tasks.value.push(newTask.value)
+      newTask.value = ''
+    }
   }
-}
 
-const deleteTask = (index) => {
-  tasks.value.splice(index, 1)
-}
+  const deleteTask = (index) => {
+    tasks.value.splice(index, 1)
+  }
 </script>
 
 <template>
