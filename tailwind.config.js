@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  //  content: ["./src/**/*.{html,js}"],
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -11,6 +10,9 @@ export default {
         '70/30': '70% 28%',
       },
     },
+  },
+  variants: {
+    ectends: {},
   },
   plugins: [],
 }
