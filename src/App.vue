@@ -1,3 +1,7 @@
 <template>
-  <h1 class="text-red-700">Vue Jobs</h1>
+  TODO  
 </template>
+
+<script setup>
+
+</script>
