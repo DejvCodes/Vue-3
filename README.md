@@ -23,7 +23,7 @@
 • Toast Notifications
 
 ## 💻 Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=javascript,typescript,vue,tailwind)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=javascript,vue,tailwind)](https://skillicons.dev)
 
 ## 🔐 License
 [MIT License](LICENSE) 
