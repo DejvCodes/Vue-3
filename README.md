@@ -1,5 +1,5 @@
 ## Vue 3 – Fundamentals
-• Vue Components
+Vue Components
 • Options API data() & Interpolation
 • v-if, v-else & v-else-if Directives
 • v-for Directive & Looping
