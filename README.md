@@ -19,7 +19,6 @@
 • JobListings Refactor to reactive()
 • Fetch Single Job & Display Data
 • BackButton Component
-• Proxying (související s API, ale využívá se ve Vue CLI)
 • Toast Notifications
 
 ## 💻 Tech Stack
