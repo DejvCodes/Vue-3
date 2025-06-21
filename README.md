@@ -1,4 +1,4 @@
-## Vue 3 – Fundamentals
+## Vue 3 – Fundamentals 
 Vue Components
 • Options API data() & Interpolation
 • v-if, v-else & v-else-if Directives
