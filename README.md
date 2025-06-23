@@ -20,7 +20,7 @@ Vue Components
 • Fetch Single Job & Display Data
 • BackButton Component
 • Toast Notifications
-
+ 
 ## 💻 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=javascript,vue,tailwind)](https://skillicons.dev)
 
