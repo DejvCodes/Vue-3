@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="border-b-2 border-slate-300">
     <div class="container m-auto py-6 px-6">
       <RouterLink 
         to="/jobs" 
