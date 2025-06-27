@@ -192,7 +192,7 @@
     try {
       const response = await axios.post('/api/jobs', newJob) // vite.config.js
       toast.success('Job Added Successfully');
-      router.push(`/jobs/${response.data.id}`);
+      router.push(`/jobs/job/${response.data.id}`);
     } catch (error) {
       console.error('Error fetching job', error);
       toast.error('Job Was Not Added');

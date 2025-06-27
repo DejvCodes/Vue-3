@@ -200,7 +200,7 @@
     try {
       const response = await axios.put(`/api/jobs/${jobId}`, updatedJob); // vite.config.js
       toast.success('Job Updated Successfully');
-      router.push(`/jobs/${response.data.id}`);
+      router.push(`/jobs/job/${response.data.id}`);
     } catch (error) {
       console.error('Error fetching job', error);
       toast.error('Job Was Not Updated');
