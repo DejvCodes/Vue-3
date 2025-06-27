@@ -24,7 +24,7 @@
 </template>
     
 <script setup>
-  import { ref, defineProps } from 'vue';
+  import { ref } from 'vue';
   import jobData from '@/jobs.json';
   import JobListing from './JobListing.vue';
 
