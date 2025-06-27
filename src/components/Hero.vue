@@ -23,5 +23,5 @@
       type: String,
       default: 'Find the Vue job that fits your skills and needs'
     }
-  })
+  });
 </script>

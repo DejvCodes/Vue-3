@@ -10,10 +10,10 @@
         <div>
           {{ truncatedDescription }}
         </div>
+
         <button 
           @click="toggleFullDescription" 
-          class="text-green-500 hover:text-green-600 mb-5"
-        >
+          class="text-green-500 hover:text-green-600 mb-5">
           {{ showFullDescription ? 'Less' : 'More' }}
         </button>
       </div>
@@ -29,9 +29,9 @@
           <i class="pi pi-map-marker text-orange-700"></i>
           {{ job.location }}
         </div>
-        
+
         <RouterLink 
-          :to="'/job/' + job.id"
+          :to="'/jobs/' + job.id"
           class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm">
           Read More
         </RouterLink>
@@ -46,19 +46,19 @@
 
   const props = defineProps({
     job: Object
-  })
+  });
 
-  const showFullDescription = ref(false)
+  const showFullDescription = ref(false);
 
   const toggleFullDescription = () => {
-    showFullDescription.value = !showFullDescription.value
-  }
+    showFullDescription.value = !showFullDescription.value;
+  };
 
   const truncatedDescription = computed(() => {
-    let description = props.job.description
+    let description = props.job.description;
     if (!showFullDescription.value) {
-      description = description.substring(0, 90) + '...'
+      description = description.substring(0, 90) + '...';
     }
-    return description
+    return description;
   })
 </script>

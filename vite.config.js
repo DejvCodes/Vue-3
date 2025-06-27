@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,5 +18,12 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000', // Forward API calls to backend server
+        changeOrigin: true,              // Modify the origin header to match the target
+        rewrite: (path) => path.replace(/^\/api/, '') // Remove '/api' from the beginning of the path
+      }
+    }
   }
 }) 
