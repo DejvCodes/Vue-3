@@ -25,4 +25,4 @@ Vue Components
 [![My Skills](https://skillicons.dev/icons?i=javascript,vue,tailwind)](https://skillicons.dev)
 
 ## 🔐 License
-[MIT License](LICENSE)
+[MIT License](LICENSE) 
