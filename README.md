@@ -1,6 +1,6 @@
-# 📝 Vue Jobs
+# 📝 Vue 3 - Jobs
 A modern and responsive Job Board Application built with Vue 3, Vue Router, Tailwind CSS and Axios. <br>
-This app allows users to browse, add, edit and delete job listings with a beautiful gradient UI and smooth animations. <br>
+This app allows users to browse, add, edit and delete job listings with a beautiful gradient UI and smooth animations. 
 All data is stored via JSON Server for a full CRUD experience.
 
 ## 🚀 Features 
@@ -40,7 +40,14 @@ All data is stored via JSON Server for a full CRUD experience.
 • Form Handling – Complex form state management <br>
 • Conditional Rendering – Dynamic UI updates <br>
 
-## 🏃‍♂️ How to Run this App
+## 🎨 Design Features
+• **Modern Gradients** – Beautiful color transitions throughout the app. <br>
+• **Smooth Animations** – Hover effects, transitions and transforms. <br>
+• **Card Shadows** – Elevated UI elements with shadow-xl. <br>
+• **Responsive Layout** – Mobile-first design with Tailwind breakpoints. <br>
+• **Focus States** – Enhanced accessibility with ring utilities. <br>
+
+## 🏃🏻 How to Run this App
 1. Clone the repository: <br>
    • `git clone https://github.com/DejvCodes/Vue-3.git` <br>
    • `cd Vue-3` <br>
@@ -54,13 +61,6 @@ All data is stored via JSON Server for a full CRUD experience.
 
 ## 💻 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=javascript,vue,tailwind,vite)](https://skillicons.dev)
-
-## 🎨 Design Features
-• **Modern Gradients** – Beautiful color transitions throughout the app. <br>
-• **Smooth Animations** – Hover effects, transitions and transforms. <br>
-• **Card Shadows** – Elevated UI elements with shadow-xl. <br>
-• **Responsive Layout** – Mobile-first design with Tailwind breakpoints. <br>
-• **Focus States** – Enhanced accessibility with ring utilities. <br>
 
 ## 📁 Project Structure
 ```
