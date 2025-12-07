@@ -1,5 +1,5 @@
 <template>
-  <div :class="`${bg} p-6 rounded-lg shadow-md`">
+  <div :class="`${bg} p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2`">
     <slot />
   </div>
 </template>

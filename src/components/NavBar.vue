@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-green-700 border-b border-green-500">
+    <nav class="bg-gradient-to-r from-green-600 to-green-700 border-b border-green-500 shadow-lg">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="flex h-20 items-center justify-between">
           <div
@@ -19,12 +19,14 @@
                   to="/" 
                   :class="[
                     isActiveLink('/') 
-                    ? 'bg-green-900' 
-                    : 'hover:bg-gray-900', 
-                  'text-white', 
-                  'rounded-md', 
-                  'px-3', 
-                  'py-2'
+                    ? 'bg-white text-green-700 shadow-md' 
+                    : 'hover:bg-green-800 text-white', 
+                  'rounded-lg', 
+                  'px-4', 
+                  'py-2',
+                  'transition-all',
+                  'duration-300',
+                  'font-medium'
                 ]">
                   Home
                 </RouterLink>
@@ -33,12 +35,14 @@
                   to="/jobs" 
                   :class="[
                     isActiveLink('/jobs') 
-                    ? 'bg-green-900' 
-                    : 'hover:bg-gray-900', 
-                  'text-white', 
-                  'rounded-md', 
-                  'px-3', 
-                  'py-2'
+                    ? 'bg-white text-green-700 shadow-md' 
+                    : 'hover:bg-green-800 text-white', 
+                  'rounded-lg', 
+                  'px-4', 
+                  'py-2',
+                  'transition-all',
+                  'duration-300',
+                  'font-medium'
                 ]">
                   Jobs
                 </RouterLink>
@@ -47,12 +51,14 @@
                   to="/jobs/add" 
                   :class="[
                     isActiveLink('/jobs/add') 
-                    ? 'bg-green-900' 
-                    : 'hover:bg-gray-900', 
-                  'text-white', 
-                  'rounded-md', 
-                  'px-3', 
-                  'py-2'
+                    ? 'bg-white text-green-700 shadow-md' 
+                    : 'hover:bg-green-800 text-white', 
+                  'rounded-lg', 
+                  'px-4', 
+                  'py-2',
+                  'transition-all',
+                  'duration-300',
+                  'font-medium'
                 ]">
                   Add Job
                 </RouterLink>

@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-blue-50 px-4 py-10">
+  <section class="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
     <div class="container-xl lg:container m-auto">
-      <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
-        Brows Jobs
+      <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">
+        Browse Jobs
       </h2>
 
       <!-- Show loading spinner while loading is true -->
@@ -24,7 +24,7 @@
   <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
     <RouterLink 
       to="/jobs/" 
-      class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700">
+      class="block bg-gradient-to-r from-green-600 to-green-700 text-white text-center py-4 px-8 rounded-xl hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 font-semibold text-lg">
       View All Jobs
     </RouterLink>
   </section>

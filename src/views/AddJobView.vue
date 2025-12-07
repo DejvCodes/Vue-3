@@ -1,15 +1,15 @@
 <template>
   <BackButton />
-  <section class="bg-green-50">
+  <section class="bg-gradient-to-b from-green-50 to-white">
     <div class="container m-auto max-w-2xl py-24">
-      <div class="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
+      <div class="bg-white px-8 py-10 mb-4 shadow-xl rounded-2xl border border-gray-100 m-4 md:m-0">
         <form @submit.prevent="handleSubmit">
-          <h2 class="text-3xl text-center font-semibold mb-6">
+          <h2 class="text-4xl text-center font-bold mb-8 text-gray-800">
             Add Job
           </h2>
 
-          <div class="mb-4">
-            <label for="type" class="block text-gray-700 font-bold mb-2">
+          <div class="mb-6">
+            <label for="type" class="block text-gray-700 font-bold mb-3">
               Job Type
             </label>
 
@@ -17,7 +17,7 @@
               v-model="form.type" 
               id="type" 
               name="type" 
-              class="border rounded w-full py-2 px-3" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               required
             >
               <option value="Full-Time">Full-Time</option>
@@ -27,40 +27,40 @@
             </select>
           </div>
 
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2">Job Listing Name</label>
+          <div class="mb-6">
+            <label class="block text-gray-700 font-bold mb-3">Job Listing Name</label>
 
             <input 
               type="text" 
               v-model="form.title" 
               id="name" 
               name="name" 
-              class="border rounded w-full py-2 px-3 mb-2"
-              placeholder="eg. Beautiful Apartment In Miami" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
+              placeholder="eg. Senior Vue Developer" 
               required 
             />
           </div>
-          <div class="mb-4">
-            <label for="description" class="block text-gray-700 font-bold mb-2">Description</label>
+          <div class="mb-6">
+            <label for="description" class="block text-gray-700 font-bold mb-3">Description</label>
 
             <textarea 
               id="description" 
               v-model="form.description" 
               name="description"
-              class="border rounded w-full py-2 px-3" 
-              rows="4"
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
+              rows="5"
               placeholder="Add any job duties, expectations, requirements, etc">
             </textarea>
           </div>
 
-          <div class="mb-4">
-            <label for="type" class="block text-gray-700 font-bold mb-2">Salary</label>
+          <div class="mb-6">
+            <label for="type" class="block text-gray-700 font-bold mb-3">Salary</label>
 
             <select 
               id="salary" 
               v-model="form.salary" 
               name="salary" 
-              class="border rounded w-full py-2 px-3" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               required
             >
               <option value="Under $50K">under $50K</option>
@@ -77,72 +77,72 @@
             </select>
           </div>
 
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2">Location</label>
+          <div class="mb-8">
+            <label class="block text-gray-700 font-bold mb-3">Location</label>
             <input 
               type="text" 
               v-model="form.location" 
               id="location" 
               name="location"
-              class="border rounded w-full py-2 px-3 mb-2" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               placeholder="Company Location" 
               required 
             />
           </div>
 
-          <h3 class="text-2xl mb-5">Company Info</h3>
+          <h3 class="text-3xl font-bold mb-6 text-gray-800">Company Info</h3>
 
-          <div class="mb-4">
-            <label for="company" class="block text-gray-700 font-bold mb-2">Company Name</label>
+          <div class="mb-6">
+            <label for="company" class="block text-gray-700 font-bold mb-3">Company Name</label>
             <input 
               type="text" 
               v-model="form.company.name" 
               id="company" 
               name="company"
-              class="border rounded w-full py-2 px-3" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               placeholder="Company Name" 
             />
           </div>
 
-          <div class="mb-4">
-            <label for="company_description" class="block text-gray-700 font-bold mb-2">Company Description</label>
+          <div class="mb-6">
+            <label for="company_description" class="block text-gray-700 font-bold mb-3">Company Description</label>
             <textarea 
               id="company_description" 
               v-model="form.company.description" 
               name="company_description"
-              class="border rounded w-full py-2 px-3" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               rows="4" 
               placeholder="What does your company do?">
             </textarea>
           </div>
 
-          <div class="mb-4">
-            <label for="contact_email" class="block text-gray-700 font-bold mb-2">Contact Email</label>
+          <div class="mb-6">
+            <label for="contact_email" class="block text-gray-700 font-bold mb-3">Contact Email</label>
             <input 
               type="email" 
               v-model="form.company.contactEmail" 
               id="contact_email" 
               name="contact_email"
-              class="border rounded w-full py-2 px-3" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               placeholder="Email address for applicants" 
               required 
             />
           </div>
-          <div class="mb-4">
-            <label for="contact_phone" class="block text-gray-700 font-bold mb-2">Contact Phone</label>
+          <div class="mb-8">
+            <label for="contact_phone" class="block text-gray-700 font-bold mb-3">Contact Phone</label>
             <input 
               type="tel" 
               v-model="form.company.contactPhone" 
               id="contact_phone" 
               name="contact_phone"
-              class="border rounded w-full py-2 px-3" 
+              class="border border-gray-300 rounded-lg w-full py-3 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all" 
               placeholder="Optional phone for applicants" 
             />
           </div>
 
           <div>
             <button
-              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
+              class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl w-full focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
               type="submit">
               Add Job
             </button>
