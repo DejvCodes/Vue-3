@@ -69,7 +69,7 @@ src/
 ├── views/          # Page-level components (HomeView, JobsView, AddJobView, etc.)
 ├── router/         # Vue Router configuration
 ├── jobs.json       # Mock API data for JSON Server
-└── App.vue         # Root component
+└── App.vue         # Root component 
 ```
 
 ## 🔐 License
