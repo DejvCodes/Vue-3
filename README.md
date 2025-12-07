@@ -65,7 +65,7 @@ All data is stored via JSON Server for a full CRUD experience.
 ## 📁 Project Structure
 ```
 src/
-├── components/      # Reusable Vue components (NavBar, Hero, JobListing, etc.)
+├── components/     # Reusable Vue components (NavBar, Hero, JobListing, etc.)
 ├── views/          # Page-level components (HomeView, JobsView, AddJobView, etc.)
 ├── router/         # Vue Router configuration
 ├── jobs.json       # Mock API data for JSON Server
