@@ -1,4 +1,4 @@
-# 📝 Vue 3 - Jobs
+## 📝 Vue 3 - Jobs
 A modern and responsive Job Board Application built with Vue 3, Vue Router, Tailwind CSS and Axios. 
 This app allows users to browse, add, edit and delete job listings with a beautiful gradient UI and smooth animations. 
 All data is stored via JSON Server for a full CRUD experience.
