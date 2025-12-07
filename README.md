@@ -57,7 +57,6 @@ All data is stored via JSON Server for a full CRUD experience.
    • `npm run dev` <br>
 4. In a separate terminal, run the JSON server (for API): <br>
    • `npm run server` <br>
-5. Open your browser and navigate to `http://localhost:5173` <br>
 
 ## 💻 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=javascript,vue,tailwind,vite)](https://skillicons.dev)
