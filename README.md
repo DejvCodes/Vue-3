@@ -49,8 +49,8 @@ All data is stored via JSON Server for a full CRUD experience.
 
 ## 🏃🏻 How to Run this App
 1. Clone the repository: <br>
-   • `git clone https://github.com/DejvCodes/Vue-3.git` <br>
-   • `cd Vue-3` <br>
+   • `git clone https://github.com/DejvCodes/Job-Board-App-Vue-3.git` <br>
+   • `cd Job-Board-App-Vue-3` <br>
 2. Install dependencies: <br>
    • `npm install` <br>
 3. Run the development server: <br>
