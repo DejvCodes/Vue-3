@@ -15,7 +15,7 @@ All data is stored via JSON Server for a full CRUD experience.
 • **404 Page** – Custom not found page with smooth animations and navigation. <br>
 • **Active Navigation** – Highlighted active links with gradient styling. <br>
 
-## 📚 Vue 3 Concepts Covered 
+## 📚 Vue 3 Concepts Covered
 **Fundamentals** <br>
 • Options API – data() & Interpolation <br>
 • Directives – v-if, v-else, v-else-if, v-for, v-bind, v-on, v-model <br>
